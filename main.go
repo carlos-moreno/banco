@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"banco/contas"
+	"github.com/carlos-moreno/banco/contas"
 
-	"banco/clientes"
+	"github.com/carlos-moreno/banco/clientes"
 )
 
 func main() {
