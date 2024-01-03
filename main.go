@@ -16,8 +16,11 @@ func main() {
 		Profissao: "Desenvolvedor"}
 	contaDoCarlos := contas.ContaCorrente{Titular: clienteCarlos,
 		NumeroAgencia: 1432,
-		NumeroConta:   223123,
-		Saldo:         10500.50}
+		NumeroConta:   223123}
+
+	contaDoCarlos.Depositar(100)
+
 	fmt.Println(contaDoCarlos)
+	fmt.Println(contaDoCarlos.ObterSaldo())
 
 }
