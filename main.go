@@ -8,6 +8,14 @@ import (
 	"github.com/carlos-moreno/banco/clientes"
 )
 
+func PagarBoleto(conta verificarConta, valorDoBoleto float64) {
+	conta.Sacar(valorDoBoleto)
+}
+
+type verificarConta interface {
+	Sacar(valor float64) string
+}
+
 func main() {
 
 	clienteCarlos := clientes.Titular{
@@ -30,4 +38,6 @@ func main() {
 	contaDoLuiz := contas.ContaPoupanca{Titular: clienteLuiz}
 	fmt.Println(contaDoLuiz)
 
+	PagarBoleto(&contaDoCarlos, 40)
+	fmt.Println(contaDoCarlos.ObterSaldo())
 }
