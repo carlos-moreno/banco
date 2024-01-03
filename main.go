@@ -23,4 +23,11 @@ func main() {
 	fmt.Println(contaDoCarlos)
 	fmt.Println(contaDoCarlos.ObterSaldo())
 
+	clienteLuiz := clientes.Titular{
+		Nome:      "Luíz Gabriel",
+		CPF:       "999.999.321-90",
+		Profissao: "SRE"}
+	contaDoLuiz := contas.ContaPoupanca{Titular: clienteLuiz}
+	fmt.Println(contaDoLuiz)
+
 }
