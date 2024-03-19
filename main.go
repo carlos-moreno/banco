@@ -20,7 +20,7 @@ func main() {
 
 	clienteCarlos := clientes.Titular{
 		Nome:      "Carlos Moreno",
-		CPF:       "999.999.123-90",
+		CPF:       "999.999.999-90",
 		Profissao: "Desenvolvedor"}
 	contaDoCarlos := contas.ContaCorrente{Titular: clienteCarlos,
 		NumeroAgencia: 1432,
@@ -33,7 +33,7 @@ func main() {
 
 	clienteLuiz := clientes.Titular{
 		Nome:      "Luíz Gabriel",
-		CPF:       "999.999.321-90",
+		CPF:       "999.999.887-92",
 		Profissao: "SRE"}
 	contaDoLuiz := contas.ContaPoupanca{Titular: clienteLuiz}
 	fmt.Println(contaDoLuiz)
